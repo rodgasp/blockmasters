@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>goblockchain_wb</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <h3>
+      <p>Workbench - GoBockchain</p>
+    </h3>
+    <br>
+
+    <form>
+      <div class="form-group row">
+        <label for="no_status" class="col-sm-2 col-form-label">Estado do aplicação:</label>
+        <div class="col-sm-10">
+          <label class="form-control-plaintext" id="no_status"></label>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="versionGeth" class="col-sm-2 col-form-label">Versão Geth:</label>
+        <div class="col-sm-10">
+          <label class="form-control-plaintext" id="versionGeth"></label>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nodes" class="col-sm-2 col-form-label">Nós conectados:</label>
+        <div class="col-sm-10">
+          <label class="form-control-plaintext" id="nodes"></label>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="nodes" class="col-sm-2 col-form-label">Quantidade Contas:</label>
+        <div class="col-sm-10">
+          <label class="form-control-plaintext" id="sizeAccounts"></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <ul id="accounts_ul">
+        </ul>
+      </div>
+    </form>
+    <div class="card">
+      <h5 class="card-header">Contrato</h5>
+
+      <div class="card-body">
+        <div class="form-group row">
+            <label for="versionGeth" class="col-sm-2 col-form-label">Dono do Evento:</label>
+            <div class="col-sm-10">
+              <label class="form-control-plaintext" id="donoEvento"></label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="versionGeth" class="col-sm-2 col-form-label">Status do Evento:</label>
+            <div class="col-sm-10">
+              <label class="form-control-plaintext" id="statusEvento"></label>
+            </div>
+            <div class="col-sm-10">
+                <button type="button" class="btn btn-danger" id="btnEncerrar" style="display: none">Encerrar Evento</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <h5 class="card-header">Confirmar Presença</h5>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="col-4">
+            <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnConfirmar">Confirmar</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <h5 class="card-header">Verificar Presença</h5>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="col-4">
+            <input type="text" class="form-control" id="address" placeholder="Endereço">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnVerificar">Verificar</button>
+        </div>
+        <div class="form-row">
+            <div class="col-4">
+              <label id="retornoPresenca"></label>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="footer">
+    <p>♥ GoBlockchain</p>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- web3 -->
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  <!--bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--js-->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
